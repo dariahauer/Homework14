@@ -60,7 +60,7 @@ public class PositiveNumbersCalc {
         int maxValue = original.get(0);
         for (int i = 0; i < original.size(); i++) {
             if (maxValue < original.get(i)) {
-                maxValue += original.get(i);
+                maxValue = original.get(i);
             }
 
         }
@@ -72,7 +72,7 @@ public class PositiveNumbersCalc {
         int minValue = original.get(0);
         for (int i = 0; i < original.size(); i++) {
             if (minValue > original.get(i)) {
-                minValue += original.get(i);
+                minValue = original.get(i);
             }
         }
         return minValue;
